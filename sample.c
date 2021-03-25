@@ -19,7 +19,7 @@ int sumValueWithOtherData( int value )
     printf("Inside the function we find sum = %d\n", sum);
 
     // Clear out the array (This is the logic error)
-    pElement[0] = 0;	// This is actually the same memory location that 'result' exists at.
+    pElement[0] = 0;	// This is actually the same memory location that 'sum' exists at.
     pElement[1] = 0;    // This is the lower 32-bit portion of the address contained in pElement
 
     return sum;
